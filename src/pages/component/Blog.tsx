@@ -7,6 +7,7 @@ type PostData ={
     slug:string;
     tags: string[];
     title:string;
+    description?:string;
 }
 const Blog = ({allData}:any) => {
   return (
@@ -15,7 +16,7 @@ const Blog = ({allData}:any) => {
         <h1 className='text-center text-white text-5xl py-10'>KUMA BLOG</h1>
         {allData.map((post:PostData) =>(
           <div key={post.id} className='cursor-pointer'>
-          <SinglePost slug={post.slug} tags={post.tags} title={post.title} description={''}/>
+          <SinglePost slug={post.slug} tags={post.tags} title={post.title} description={''} />
           </div>
         ))}
       </main>

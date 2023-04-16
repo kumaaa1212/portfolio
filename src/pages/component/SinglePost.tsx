@@ -7,7 +7,7 @@ type Props = {
   tags: string[];
   slug: string;
 }
-const SinglePost = ({ title, description, tags, id, slug }: Props) => {
+const SinglePost = ({ title, description, tags, slug }: Props) => {
   return (
     <section className=' lg:w-1/2 bg-sky-900 mb-8 mx-auto rounded-md p-5 shadow-2xl hover:shadow-none hover:translate-y-1 transition-all duration-300'>
       <div className='flex items-center gap-3'>
@@ -17,7 +17,7 @@ const SinglePost = ({ title, description, tags, id, slug }: Props) => {
           </Link>
         </h2>
         <div className='text-gray-100'>{description}</div>
-        {tags.map((tag) => (
+        {tags && tags.map((tag) => (
           <span className='text-white bg-gray-500 px-2 pb-1 font-medium' key={tag}>{tag}</span>
         ))}
       </div>
