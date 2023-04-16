@@ -54,7 +54,7 @@ const Layout = ({ children }: any) => {
           </div>
         </nav>
       </header>
-      <main>{children}</main>
+      <main className='bg-gray-800 pb-96'>{children}</main>
       <footer></footer>
     </div>
   )

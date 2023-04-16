@@ -15,41 +15,41 @@ export default function Home() {
               Welcome to my portfolio!
             </h2>
             <h3 className="text-2xl mb-8 text-gray-200">
-              I am a web developer and this is my portfolio website.
+            I am a front-end engineer and this is my portfolio website.
             </h3>
             <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
               <Link href='/component/ContactForm'>Get In Touch</Link>
             </button>
           </div>
         </section>
+        <Slider />
         <section className="bg-gray-800 text-white py-20 animate-fade-in">
           <div className="container mx-auto">
-            <h1 className="text-3xl font-semibold mb-8 animate-slide-up">INTRODUCTION</h1>
+            <h1 className="text-4xl font-semibold mb-8 animate-slide-up">INTRODUCTION</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="animate-slide-left">
-                <h2 className="text-xl font-semibold mb-4">PROFILE</h2>
+                <h2 className="text-3xl font-semibold mb-4">PROFILE</h2>
                 <ul className="list-disc pl-5">
-                  <li className="mb-2 list-none">NAME : 大熊亮平</li>
-                  <li className="mb-2 list-none">UNIVERSITY :青山学院大学</li>
-                  <li className="mb-2 list-none">MAJOR : コミュニティ人間科学部</li>
+                  <li className="mb-2 list-none text-xl">NAME : 大熊亮平</li>
+                  <li className="mb-2 list-none text-xl">UNIVERSITY :青山学院大学</li>
+                  <li className="mb-2 list-none text-xl">MAJOR : コミュニティ人間科学部</li>
                 </ul>
               </div>
               <div className="animate-slide-right">
-                <h2 className="text-xl font-semibold mb-4">SKILL</h2>
+                <h2 className="text-3xl font-semibold mb-4">SKILL</h2>
                 <ul className="list-disc pl-5">
-                  <li className="mb-2 list-none">HTML / CSS</li>
-                  <li className="mb-2 list-none">JavaScript / TypeScript</li>
-                  <li className="mb-2 list-none">React</li>
-                  <li className="mb-2 list-none">Next.js</li>
-                  <li className="mb-2 list-none">Tailwind CSS / Material UI / Semantic UI</li>
+                  <li className="mb-2 list-none text-xl">HTML / CSS</li>
+                  <li className="mb-2 list-none text-xl">JavaScript / TypeScript</li>
+                  <li className="mb-2 list-none text-xl">React</li>
+                  <li className="mb-2 list-none text-xl">Next.js</li>
+                  <li className="mb-2 list-none text-xl">Tailwind CSS / Material UI / Semantic UI</li>
                 </ul>
-                <p className='text-red-500 mt-9'>成果物はメニューバーのSITEから確認することができます</p>
+                <p className='text-white mt-9'><span className='text-red-500'>*</span>成果物はメニューバーのSITEから確認することができます</p>
               </div>
             </div>
           </div>
         </section>
         <div className='bg-gray-800'>
-          <Slider />
         </div>
       </div>
     </Layout>

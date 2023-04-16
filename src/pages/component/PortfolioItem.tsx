@@ -39,7 +39,7 @@ const PortfolioItem = () => {
           </div>
         </Link>
         <Link href='https://mynote-app-xi.vercel.app/'>
-          <div className='bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 mt-8'>
+          <div className='bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 mt-8 '>
             <div className='relative h-48'>
               <Image
                 src={'/note-app.png'}
@@ -50,7 +50,7 @@ const PortfolioItem = () => {
                 className='rounded-lg'
               />
             </div>
-            <h3 className='text-gray-100 font-bold text-lg mt-4'>メモアプリ</h3>
+            <h3 className='text-gray-100 font-bold text-lg mt-4 '>メモアプリ</h3>
             <p className='text-gray-400 text-sm mt-2'>新しいメモアプリが登場しました。このアプリは、使いやすさに重点を置いて設計され、直感的な操作でメモを簡単に作成、編集、削除できます。さらに、メモの並び順は自動的に更新され、最新の情報が常に上に表示されるので、ユーザーはいつでも最新の情報を確認できます。また、見やすさにも配慮され、シンプルで明快なデザインが採用されています。これにより、情報を素早く見つけることができます。</p>
           </div>
         </Link>
