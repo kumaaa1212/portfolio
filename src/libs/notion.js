@@ -3,6 +3,7 @@ import { NotionToMarkdown } from "notion-to-md";
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
+
 const n2m = new NotionToMarkdown({ notionClient: notion });
 export const getAllPost = async () => {
   const myPage = await notion.databases.query({
@@ -38,6 +39,7 @@ export const getSinglePost = async(slug) =>{
       },
     },
   });
+
   const page = response.results[0];
   const metaData = getPageMataData(page);
   const mdblock = await n2m.pageToMarkdown(page.id);
@@ -47,5 +49,44 @@ export const getSinglePost = async(slug) =>{
     markDown:mdString
   }
 }
+export const getPostsForTopPage = async() =>{
+  const allpost = await getAllPost();
+  const fourPost = allpost.slice(0,4);
+  return fourPost
+}
+
+export const getPostBypage =async (page) =>{
+  const allpost = await getAllPost();
+  const startIndex = (page - 1) * 4;
+  // 配列だから1を引いている
+  const  endINdex = startIndex + 4;
+  // それに4を足すことで終了場所がわかる
+  return allpost.slice(startIndex,endINdex);
+}
 
 
+export const getNumberOfPage = async() =>{
+const allpost =await getAllPost();
+return Math.floor(allpost.length / 4) + (allpost.length % 4 > 0 ? 1 : 0);
+}
+
+export const getPostByTagPage = async(tagName,page) =>{
+  const allpost = await getAllPost();
+  const posts = allpost.filter((post) =>post.tags.find((tag) =>tag ===tagName));
+  const startIndex = (page - 1) * 4;
+  const  endINdex = startIndex + 4;
+  return posts.slice(startIndex,endINdex);
+}
+export const getNumberOfPageByTage = async(tagName) =>{
+  const allpost =await getAllPost();
+  const posts = allpost.filter((post) =>post.tags.find((tag) =>tag ===tagName));
+return Math.floor(posts.length / 4) + (posts.length % 4 > 0 ? 1 : 0);
+}
+export const getAllTags = async () =>{
+  const allpost =await getAllPost();
+  const tag = allpost.flatMap((post) =>post.tags);
+  const set = new Set(tag);
+  const alltagList = Array.from(set);
+  // 重複を防ぐ
+ return alltagList;
+}
