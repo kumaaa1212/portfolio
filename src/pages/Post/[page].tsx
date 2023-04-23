@@ -1,6 +1,6 @@
 import Layout from "@/Layout/Layout";
 import SinglePost from "../component/SinglePost";
-import { getAllTags, getNumberOfPage, getPostBypage, getPostsForTopPage } from "@/libs/notion";
+import { getAllTags, getNumberOfPage, getPostBypage } from "@/libs/notion";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Pagenation from "../component/Pagenation";
 import { PostData } from "../component/Blog";
