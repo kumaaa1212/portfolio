@@ -31,7 +31,6 @@ return (
 }
 export default BlogTagPageList;
 export const getStaticProps:GetStaticProps = async(context) =>{
-  console.log(context.params);
   const currentTag= context.params?.tag;
   const currentPage =context.params?.page;
   const posts = await getPostByTagPage(currentTag,currentPage);

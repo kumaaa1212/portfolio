@@ -17,6 +17,7 @@ interface BlogProps{
   fourPost:PostData[];
   allTags:string[]
 }
+
 const Blog = ({fourPost,allTags}:BlogProps) => {
   return (
     <Layout>

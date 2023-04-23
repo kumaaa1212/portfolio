@@ -6,7 +6,6 @@ export default function ContactForm() {
 
   const handleSubmit = (event:any) => {
     event.preventDefault();
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
     setName("");
     setEmail("");
     setMessage("");
