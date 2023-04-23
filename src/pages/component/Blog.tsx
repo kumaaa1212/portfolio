@@ -5,6 +5,7 @@ import SinglePost from './SinglePost';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Tag from './Tag';
+
 export type PostData = {
   id?: number
   title: string;
