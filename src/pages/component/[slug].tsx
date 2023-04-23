@@ -36,8 +36,7 @@ export async function getStaticProps({params}:any) {
   return {
     props: {
       post: post
-    },
-    revalidate: 60 * 60 * 6
+    }
   };
 }
 export const getStaticPaths = async () => {
