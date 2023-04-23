@@ -4,7 +4,7 @@ import { getAllTags, getNumberOfPage, getPostBypage, getPostsForTopPage } from "
 import { GetStaticPaths, GetStaticProps } from "next";
 import Pagenation from "../component/Pagenation";
 import { PostData } from "../component/Blog";
-import { Tag } from "../component/Tag";
+import Tag from "../component/Tag";
 interface Props{
   postByPage:PostData[];
   numberOfpage:number;

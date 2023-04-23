@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import SinglePost from "@/pages/component/SinglePost";
 import Pagenation from "@/pages/component/Pagenation";
 import { PostData } from "@/pages/component/Blog";
-import { Tag } from "@/pages/component/Tag";
+import Tag from "@/pages/component/Tag";
 interface Props{
   numberOfPageByTag:number;
   posts:PostData[];

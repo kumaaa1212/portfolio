@@ -19,5 +19,5 @@ interface TagProps{
     </div>
   )
 }
-export default Tag:
+export default Tag;
 

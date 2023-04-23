@@ -4,7 +4,7 @@ import Layout from '@/Layout/Layout';
 import SinglePost from './SinglePost';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
-import { Tag } from './Tag';
+import Tag from './Tag';
 export type PostData = {
   id?: number
   title: string;
