@@ -41,6 +41,7 @@ export default function Home() {
                   <li className="mb-2 list-none text-xl">JavaScript / TypeScript</li>
                   <li className="mb-2 list-none text-xl">React</li>
                   <li className="mb-2 list-none text-xl">Next.js</li>
+                  <li className="mb-2 list-none text-xl">GraphQL/Apollo/Prisma</li>
                   <li className="mb-2 list-none text-xl">Tailwind CSS / Material UI / Semantic UI</li>
                 </ul>
                 <p className='text-white mt-9'><span className='text-red-500'>*</span>成果物はメニューバーのSITEから確認することができます</p>
