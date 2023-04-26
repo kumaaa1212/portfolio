@@ -80,7 +80,7 @@ const PortfolioItem = () => {
           <div className='bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 mt-8'>
             <div className='relative h-48'>
               <Image
-                src='/GraphQL-blog.png'
+                src='/GraphQL-Blog.png'
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
