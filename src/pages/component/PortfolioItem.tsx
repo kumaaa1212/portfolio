@@ -59,6 +59,23 @@ const PortfolioItem = () => {
             <p className='text-white'>React</p>
           </div>
         </Link>
+        <Link href='https://pokemon-five-orcin.vercel.app/'>
+          <div className='bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 mt-8'>
+            <div className='relative h-48'>
+              <Image
+                src='/pokemon.png'
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+                alt=''
+                className='rounded-lg'
+              />
+            </div>
+            <h3 className='text-gray-100 font-bold text-lg mt-4'>ポケモン図鑑</h3>
+            <p className='text-gray-400 text-sm mt-2'>ポケモン図鑑は、ポケモンのデータや画像を一覧で表示し、ユーザーがポケモンの情報を閲覧できるアプリケーションです。</p>
+            <p className='text-white'>React</p>
+          </div>
+        </Link>
       </div>
     </Layout>
   );
