@@ -73,7 +73,24 @@ const PortfolioItem = () => {
             </div>
             <h3 className='text-gray-100 font-bold text-lg mt-4'>ポケモン図鑑</h3>
             <p className='text-gray-400 text-sm mt-2'>ポケモン図鑑は、ポケモンのデータや画像を一覧で表示し、ユーザーがポケモンの情報を閲覧できるアプリケーションです。</p>
-            <p className='text-white'>React</p>
+            <p className='text-white'>React/PokeAPI</p>
+          </div>
+        </Link>
+        <Link href='https://graph-ql-blog-pi.vercel.app/'>
+          <div className='bg-gray-800 p-4 rounded-lg shadow-md hover:bg-gray-900 transition duration-300 mt-8'>
+            <div className='relative h-48'>
+              <Image
+                src='/GraphQL-blog.png'
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+                alt=''
+                className='rounded-lg'
+              />
+            </div>
+            <h3 className='text-gray-100 font-bold text-lg mt-4'>GraphQL-Blog</h3>
+            <p className='text-gray-400 text-sm mt-2'>GraphQLを使って、ブログを作成しました。柔軟性のあるデータモデルと効率的なデータ取得を実現し、記事の作成、取得、更新、削除などの機能を提供しています。</p>
+            <p className='text-white'>GraphQL/Next.js/Tailwind CSS</p>
           </div>
         </Link>
       </div>
